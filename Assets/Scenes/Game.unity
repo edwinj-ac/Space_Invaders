@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 109046794}
   - component: {fileID: 109046793}
   m_Layer: 5
-  m_Name: Score_TXT_TMP (2)
+  m_Name: Status_Game_TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 167544902}
   - component: {fileID: 167544901}
   m_Layer: 5
-  m_Name: Star_1_WIN (1)
+  m_Name: Star_2_WIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1272,13 +1272,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt_score: {fileID: 1879761206}
+  score_UI: {fileID: 1230259592}
+  status_game: {fileID: 109046793}
   score: 0
+  max_Score: 39
+  column: 0
   lives:
   - {fileID: 21300000, guid: ba53e111f0125654cabfd4eefaf3a657, type: 3}
   - {fileID: 21300000, guid: 80fba5ece7697c44eacc036539c1b552, type: 3}
   - {fileID: 21300000, guid: 482c8e4c0346b704aa5f1760c3c989d5, type: 3}
   - {fileID: 21300000, guid: 9fe6f40efddf0b64fb68a3382b14a4db, type: 3}
   livesImageDisplay: {fileID: 1702616190}
+  stars:
+  - {fileID: 773372743}
+  - {fileID: 167544899}
+  - {fileID: 638249952}
+  _invader_grid: {fileID: 152154582}
+  invader_manager: {fileID: 152154581}
+  menu_UI: {fileID: 315669684}
+  win: 0
 --- !u!4 &467508237
 Transform:
   m_ObjectHideFlags: 0
@@ -1388,7 +1400,7 @@ GameObject:
   - component: {fileID: 638249955}
   - component: {fileID: 638249954}
   m_Layer: 5
-  m_Name: Star_1_WIN (2)
+  m_Name: Star_3_WIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

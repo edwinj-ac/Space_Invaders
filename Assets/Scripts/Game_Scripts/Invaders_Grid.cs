@@ -12,12 +12,14 @@ public class Invaders_Grid : MonoBehaviour
     public float speed, advance_invaders_y;
     public float[] level_Speed, level_advance_y;
     private Vector3 _direction = Vector2.right;
-   
+    private UI_Manager _uiManager;
 
     private void Awake()
     {
         Begin_Restar_Invaders();
         total_invaders = (rows-1) * columns;
+        _uiManager = GameObject.Find("_UI_Manager").GetComponent<UI_Manager>();
+
     }
 
     private void Update()
@@ -44,6 +46,7 @@ public class Invaders_Grid : MonoBehaviour
 
         if(total_invaders <= 0)
         {
+            _uiManager.UpdateStars(true);
             Debug.Log("WIN");
         }
     }
@@ -96,6 +99,5 @@ public class Invaders_Grid : MonoBehaviour
             }
         }
     }
-
 
 }

@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
         if (lives <= 0)
         {
             Instantiate(_enemyExplosionPrefab, transform.position, Quaternion.identity);
+            _uiManager.UpdateStars(false);
             Destroy(this.gameObject);
         }
     }
